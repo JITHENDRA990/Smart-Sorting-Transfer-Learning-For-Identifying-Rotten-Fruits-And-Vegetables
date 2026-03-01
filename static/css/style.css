@@ -1,0 +1,289 @@
+/* reset */
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+}
+
+/* navbar */
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:60px;
+    background:#111;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 30px;
+    box-sizing:border-box;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+/* HOME PAGE */
+.home{
+    height:calc(100vh - 110px);
+    margin-top:60px;
+
+    background:url("../images/bg.png") no-repeat center center;
+    background-size:cover;
+
+    background-attachment:fixed;   /* THIS makes image fixed */
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    position:relative;
+}
+.home::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+}
+
+.home-content{
+    position:relative;
+    z-index:1;
+}
+
+button{
+    background:#00c853;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    font-size:16px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* predict page */
+.page{
+    margin-top:80px;
+    text-align:center;
+}
+
+/* footer */
+footer{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height:50px;
+    background:#111;
+    color:white;
+    text-align:center;
+    line-height:50px;
+}
+
+/*about html*/
+/* ABOUT PAGE */
+
+/* =========================
+ABOUT PAGE MAIN BOX
+========================= */
+
+.about-page{
+
+background:white;
+color:#222;
+
+max-width:900px;
+
+margin:100px auto 80px auto;
+
+padding:40px;
+
+border-radius:10px;
+
+box-shadow:0 0 15px rgba(0,0,0,0.15);
+
+}
+
+
+/* TITLE */
+
+.about-title{
+
+text-align:center;
+margin-bottom:30px;
+
+}
+
+.about-title h1{
+
+font-size:40px;
+color:#0b2a4a;
+
+}
+
+.about-title h3{
+
+color:#555;
+
+}
+
+
+/* HEADINGS */
+
+.about-page h2{
+
+margin-top:30px;
+margin-bottom:10px;
+
+color:#163a5f;
+
+}
+
+
+/* PARAGRAPH */
+
+.about-page p{
+
+line-height:1.7;
+
+}
+
+
+/* TECH LIST WITHOUT DOTS */
+
+.about-list{
+
+list-style:none;
+padding:0;
+
+}
+
+.about-list li{
+
+padding:6px 0;
+
+border-bottom:1px solid #eee;
+
+}
+
+
+/* =========================
+WORKFLOW DESIGN
+========================= */
+
+.workflow{
+
+text-align:center;
+margin-top:20px;
+
+}
+
+.flow-box{
+
+display:inline-block;
+
+background:#eaf4ff;
+
+padding:12px 20px;
+
+border-radius:8px;
+
+margin:8px;
+
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+
+}
+
+.arrow{
+
+font-size:22px;
+color:#2980b9;
+
+}
+
+.result-box{
+
+background:#d4edda;
+color:#155724;
+font-weight:bold;
+
+}
+
+
+/* =========================
+STRUCTURE STYLE
+========================= */
+
+.structure-title{
+
+margin-top:30px;
+
+}
+
+.vscode-structure{
+
+background:#f4f8fc;
+
+padding:20px;
+
+border-radius:8px;
+
+box-shadow:0 3px 10px rgba(0,0,0,0.15);
+
+font-family:Consolas, monospace;
+
+font-size:15px;
+
+line-height:1.6;
+
+overflow-x:auto;
+
+}/* =========================
+   CONTACT PAGE
+========================= */
+
+.contact-layout {
+
+    display:flex;
+    justify-content:center;
+    gap:40px;
+
+    margin-top:110px;
+
+    height: calc(100vh - 140px);
+}
+
+.team-info {
+
+    width:320px;
+
+    background:#eef4ff;
+
+    padding:20px;
+
+    border-radius:10px;
+
+}
+
+.contact-card {
+
+    background:#f5f7fa;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    width:350px;
+
+}

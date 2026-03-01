@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Contact - NutriGaze</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body class="about-body">
+
+<!-- NAVBAR -->
+
+<div class="navbar">
+
+<div class="nav-left">
+🥗 NutriGaze
+</div>
+
+<div class="nav-right">
+
+<div class="menu-icon" onclick="openMenu()">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- SIDE MENU -->
+
+<div id="sideMenu" class="side-menu">
+
+<div class="menu-header">
+<span onclick="closeMenu()">✖</span>
+</div>
+
+<a href="/">Home</a>
+<a href="/about">About</a>
+<a href="/contact">Contact</a>
+
+</div>
+
+<div id="overlay" class="overlay"
+onclick="closeMenu()"></div>
+
+
+<!-- CONTACT CONTENT -->
+
+<div class="contact-layout">
+
+
+<div class="team-info">
+
+<h2>Project Information</h2>
+
+<p><b>Project:</b> NutriGaze</p>
+
+<p><b>Technology:</b> AI, Deep Learning, Flask</p>
+
+<p><b>Purpose:</b> Fruit & Vegetable Classification</p>
+
+<p><b>Developer:</b> Kishor Baitapalli</p>
+
+<p><b>Email:</b> kishor.baitapalli575@gmail.com</p>
+
+</div>
+
+
+<div class="team-details">
+
+<div class="contact-card leader">
+
+<h3>Project Developer</h3>
+
+<p>Kishor Baitapalli</p>
+
+<p>Full Stack Developer & AI Enthusiast</p>
+
+<p>Godavari Institute of Engineering & Technology</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<script src="{{ url_for('static', filename='js/smart.js') }}"></script>
+
+
+<div class="footer-bar">
+
+<p>
+© 2026 NutriGaze | AI Fruit & Vegetable Classification
+</p>
+
+</div>
+
+
+</body>
+</html>

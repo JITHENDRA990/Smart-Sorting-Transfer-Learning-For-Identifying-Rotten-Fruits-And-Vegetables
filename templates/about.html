@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="about-page">
+
+    <!-- TITLE -->
+    <div class="about-title">
+        <h1>NutriGaze</h1>
+        <h3>AI Based Fruit & Vegetable Freshness Classification</h3>
+    </div>
+
+
+    <!-- OVERVIEW -->
+    <h2>Project Overview</h2>
+
+    <p>
+        NutriGaze is an AI-powered web application that detects whether fruits and vegetables
+        are fresh or rotten using Deep Learning and Image Classification.
+        Users can upload an image and instantly receive freshness prediction results.
+    </p>
+
+
+    <!-- TECHNICAL SKILLS -->
+    <h2>Technical Skills Used</h2>
+
+    <ul class="about-list">
+
+        <li>Python</li>
+        <li>Flask Web Framework</li>
+        <li>TensorFlow / Keras</li>
+        <li>Transfer Learning (MobileNetV2)</li>
+        <li>HTML, CSS, JavaScript</li>
+
+    </ul>
+
+
+    <!-- WORKFLOW -->
+    <h2>System Workflow</h2>
+
+    <div class="workflow">
+
+        <div class="flow-box">
+            User Uploads Image
+        </div>
+
+        <div class="arrow">↓</div>
+
+        <div class="flow-box">
+            Flask Server Receives Image
+        </div>
+
+        <div class="arrow">↓</div>
+
+        <div class="flow-box">
+            Image Preprocessing
+        </div>
+
+        <div class="arrow">↓</div>
+
+        <div class="flow-box">
+            CNN Model Prediction
+        </div>
+
+        <div class="arrow">↓</div>
+
+        <div class="flow-box result-box">
+            Freshness Result Displayed
+        </div>
+
+    </div>
+
+
+    <!-- PROJECT STRUCTURE -->
+    <h2 class="structure-title">VS Code Project Structure</h2>
+
+<pre class="vscode-structure">
+
+SMARTSORTINGPROJECT/
+
+│
+├── dataset/
+│   │
+│   ├── train/
+│   │   ├── healthy/
+│   │   ├── rotten/
+│   │   └── others/
+│   │
+│   └── validation/
+│       ├── healthy/
+│       ├── rotten/
+│       └── others/
+│
+├── model/
+│   └── freshness_model.h5
+│
+├── static/
+│   ├── css/
+│   ├── js/
+│   └── uploads/
+│
+├── templates/
+│   ├── index.html
+│   ├── about.html
+│   ├── predict.html
+│   └── result.html
+│
+├── app.py
+├── train_model.py
+└── requirements.txt
+
+</pre>
+
+
+</div>
+
+{% endblock %}
